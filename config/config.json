@@ -1,0 +1,29 @@
+{
+  "crawler": {
+    "timeout": 120000,
+    "max_retries": 3,
+    "interval": 3000
+  },
+  "extractor": {
+    "html2text": {
+      "ignore_links": false,
+      "ignore_images": false,
+      "body_width": 0
+    },
+    "text_selectors": [
+      "article", 
+      "main", 
+      ".post-content", 
+      "[class*=\"body\"]",
+      "#js_content"
+    ]
+  },
+  "notification": {
+    "enabled": false,
+    "channels": {
+      "feishu": {
+        "enabled": false
+      }
+    }
+  }
+}
